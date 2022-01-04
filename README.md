@@ -1,7 +1,7 @@
 # TaskTimer
 This application allows the user to monitor the time spend on each task versus an initial estimate.
 
-#Installation Instructions
+# Installation Instructions
 
 There isn't a way to install it yet.
 
