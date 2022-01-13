@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Task Timer" HorizontalAlignment="Left" Margin="26,24,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="40,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Title" HorizontalAlignment="Left" Margin="40,76,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.002"/>
+        <TextBox HorizontalAlignment="Left" Margin="40,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="349" Height="48"/>
+        <Label Content="WhatToDo" HorizontalAlignment="Left" Margin="40,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.002"/>
+        <Label Content="Time estimation" HorizontalAlignment="Left" Margin="40,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.002"/>
+        <TextBox HorizontalAlignment="Left" Margin="40,248,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="95"/>
+        <ComboBox HorizontalAlignment="Left" Margin="171,244,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="in" HorizontalAlignment="Left" Margin="139,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.002"/>
+        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="420,37,10,99">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn  />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="40,285,0,0" VerticalAlignment="Top"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Margin="86,285,0,0" VerticalAlignment="Top"/>
+        <Label Content="Project" HorizontalAlignment="Left" Margin="231,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.002"/>
+        <TextBox HorizontalAlignment="Left" Margin="238,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="40,341,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="349" Height="48"/>
+        <Label Content="Feedback" HorizontalAlignment="Left" Margin="40,314,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.002"/>
+        <Button Content="End task" HorizontalAlignment="Left" Margin="42,394,0,0" VerticalAlignment="Top"/>
+        <Label Content="Time total deviation:" HorizontalAlignment="Left" Margin="420,352,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.002"/>
+        <Label Content="value in hours" HorizontalAlignment="Left" Margin="547,352,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.002"/>
+        <Button Content="Clear History" HorizontalAlignment="Left" Margin="431,389,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
